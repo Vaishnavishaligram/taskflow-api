@@ -1,11 +1,10 @@
-# taskflow-api
- Developed a scalable full-stack Task Management API using Node.js, Express, MongoDB, React, and JWT authentication. Implemented user registration, login, role-based access control, task CRUD operations, API versioning, validation, Swagger documentation, Docker support, and a responsive frontend dashboard for secure task management.
-
 # TaskFlow — Scalable REST API with Auth & RBAC
 
+A production-ready full-stack app featuring JWT auth, role-based access control, full CRUD, Swagger docs, and a React dashboard.
 
+---
 
-##  Architecture
+## 🏗️ Architecture
 
 ```
 project/
@@ -45,7 +44,7 @@ project/
 │   ├── src/
 │   │   ├── App.jsx              # Routes + protected routes
 │   │   ├── context/
-   │   │   └── AuthContext.js   # Global auth state
+│   │   │   └── AuthContext.js   # Global auth state
 │   │   ├── hooks/
 │   │   │   └── useTasks.js      # Task CRUD hook
 │   │   ├── pages/
@@ -67,9 +66,22 @@ project/
 
 ---
 
-##  Quick Start
+## 🚀 Quick Start
 
+### Option 1: Docker (recommended)
 
+```bash
+# 1. Clone and enter project
+cd project
+
+# 2. Start all services
+docker-compose up -d
+
+# 3. Access:
+#    Frontend: http://localhost:3000
+#    Backend:  http://localhost:5000
+#    API Docs: http://localhost:5000/api-docs
+```
 
 ### Option 2: Local Development
 
@@ -93,7 +105,7 @@ npm start
 
 ---
 
-## API Reference
+## 🔑 API Reference
 
 ### Authentication Endpoints
 
@@ -130,7 +142,7 @@ npm start
 
 ---
 
-##  Security Features
+## 🛡️ Security Features
 
 - **Helmet.js** — HTTP security headers
 - **CORS** — Configurable origin whitelist
@@ -143,7 +155,7 @@ npm start
 
 ---
 
-##  Database Schema
+## 📋 Database Schema
 
 ### User
 ```
@@ -161,7 +173,7 @@ Indexes: { owner, status }, { owner, createdAt }, text index
 
 ---
 
-##  API Documentation
+## 📖 API Documentation
 
 Swagger UI available at: **http://localhost:5000/api-docs**
 
@@ -187,7 +199,7 @@ The pattern is consistent and scalable across all modules.
 
 ---
 
-##  Environment Variables
+## 🐳 Environment Variables
 
 ```env
 PORT=5000
